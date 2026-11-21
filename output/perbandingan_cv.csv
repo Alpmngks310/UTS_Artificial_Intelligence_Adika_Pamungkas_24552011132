@@ -1,0 +1,5 @@
+model,brand_feature,cv_f1_macro_mean,cv_f1_macro_std,cv_train_f1_macro_mean,best_params
+Logistic Regression,True,1.0,0.0,1.0,"{""classifier__C"": 10.0, ""classifier__class_weight"": null}"
+Random Forest,True,0.9282883431640008,0.028000222983335543,1.0,"{""classifier__class_weight"": null, ""classifier__max_features"": ""sqrt"", ""classifier__min_samples_leaf"": 1, ""classifier__n_estimators"": 120}"
+Random Forest,False,0.7466066015884419,0.05411886410389397,0.9675007754517623,"{""classifier__class_weight"": ""balanced_subsample"", ""classifier__max_features"": ""sqrt"", ""classifier__min_samples_leaf"": 2, ""classifier__n_estimators"": 120}"
+Logistic Regression,False,0.7036911193206937,0.06982702792223854,0.7337821297001743,"{""classifier__C"": 10.0, ""classifier__class_weight"": ""balanced""}"

@@ -1,0 +1,60 @@
+
+=== AUDIT DATA ===
+Shape: (406, 9)
+Missing:
+ Name                0
+Miles_per_Gallon    8
+Cylinders           0
+Displacement        0
+Horsepower          6
+Weight_in_lbs       0
+Acceleration        0
+Year                0
+Origin              0
+Duplicate rows: 0
+Target:
+ Origin
+USA       254
+Japan      79
+Europe     73
+
+=== CV COMPARISON (TRAIN ONLY) ===
+              model  brand_feature  cv_f1_macro_mean  cv_f1_macro_std
+Logistic Regression           True          1.000000         0.000000
+      Random Forest           True          0.928288         0.028000
+      Random Forest          False          0.746607         0.054119
+Logistic Regression          False          0.703691         0.069827
+
+Baseline Dummy CV Macro F1: 0.2568
+Unseen-brand Group CV Macro F1 (diagnostic): 0.602
+
+Selected: ('Logistic Regression', True) | CV Macro F1: 1.0
+
+=== FINAL TEST METRICS (EVALUATED ONCE) ===
+accuracy              : 1.0000
+balanced_accuracy     : 1.0000
+precision_macro       : 1.0000
+recall_macro          : 1.0000
+f1_macro              : 1.0000
+f1_weighted           : 1.0000
+roc_auc_ovr_macro     : 1.0000
+
+=== CLASSIFICATION REPORT ===
+              precision    recall  f1-score   support
+
+         USA     1.0000    1.0000    1.0000        51
+      Europe     1.0000    1.0000    1.0000        15
+       Japan     1.0000    1.0000    1.0000        16
+
+    accuracy                         1.0000        82
+   macro avg     1.0000    1.0000    1.0000        82
+weighted avg     1.0000    1.0000    1.0000        82
+
+=== CONFUSION MATRIX ===
+               Predicted_USA  Predicted_Europe  Predicted_Japan
+Actual_USA                51                 0                0
+Actual_Europe              0                15                0
+Actual_Japan               0                 0               16
+
+Model saved: /mnt/data/UTS_AI_Kasus06/models/car_origin_pipeline.joblib
+Artifacts saved: /mnt/data/UTS_AI_Kasus06/output

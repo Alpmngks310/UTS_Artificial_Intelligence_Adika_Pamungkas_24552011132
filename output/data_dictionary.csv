@@ -1,0 +1,10 @@
+column,original_type,description_or_decision
+Name,object,Nama lengkap kendaraan; diekstraksi menjadi Brand
+Miles_per_Gallon,float,Konsumsi bahan bakar; 8 missing values
+Cylinders,integer,Jumlah silinder mesin
+Displacement,float,Volume/displacement mesin
+Horsepower,float,Tenaga mesin; 6 missing values
+Weight_in_lbs,integer,Bobot kendaraan dalam pon
+Acceleration,float,Ukuran akselerasi pada dataset
+Year,date string,Tanggal model; diekstraksi menjadi Model_Year
+Origin,categorical target,"USA, Europe, Japan"

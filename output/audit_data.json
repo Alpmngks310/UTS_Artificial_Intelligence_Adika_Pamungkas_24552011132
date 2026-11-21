@@ -1,0 +1,120 @@
+{
+  "shape": [
+    406,
+    9
+  ],
+  "duplicate_rows": 0,
+  "missing_by_column": {
+    "Name": 0,
+    "Miles_per_Gallon": 8,
+    "Cylinders": 0,
+    "Displacement": 0,
+    "Horsepower": 6,
+    "Weight_in_lbs": 0,
+    "Acceleration": 0,
+    "Year": 0,
+    "Origin": 0
+  },
+  "target_counts": {
+    "USA": 254,
+    "Japan": 79,
+    "Europe": 73
+  },
+  "target_percent": {
+    "USA": 62.5615763546798,
+    "Japan": 19.458128078817737,
+    "Europe": 17.980295566502463
+  },
+  "domain_checks_nonpositive_numeric": {
+    "Miles_per_Gallon_le_zero": 0,
+    "Cylinders_le_zero": 0,
+    "Displacement_le_zero": 0,
+    "Horsepower_le_zero": 0,
+    "Weight_in_lbs_le_zero": 0,
+    "Acceleration_le_zero": 0
+  },
+  "iqr_outlier_candidates_not_automatically_removed": {
+    "Miles_per_Gallon": 1,
+    "Cylinders": 0,
+    "Displacement": 0,
+    "Horsepower": 8,
+    "Weight_in_lbs": 0,
+    "Acceleration": 6
+  },
+  "empty_name_rows": 0,
+  "unparseable_year_rows": 0,
+  "numeric_summary": {
+    "Miles_per_Gallon": {
+      "count": 398.0,
+      "mean": 23.514572864321607,
+      "std": 7.8159843125657815,
+      "min": 9.0,
+      "25%": 17.5,
+      "50%": 23.0,
+      "75%": 29.0,
+      "max": 46.6
+    },
+    "Cylinders": {
+      "count": 406.0,
+      "mean": 5.475369458128079,
+      "std": 1.7121596315485297,
+      "min": 3.0,
+      "25%": 4.0,
+      "50%": 4.0,
+      "75%": 8.0,
+      "max": 8.0
+    },
+    "Displacement": {
+      "count": 406.0,
+      "mean": 194.7795566502463,
+      "std": 104.92245837948875,
+      "min": 68.0,
+      "25%": 105.0,
+      "50%": 151.0,
+      "75%": 302.0,
+      "max": 455.0
+    },
+    "Horsepower": {
+      "count": 400.0,
+      "mean": 105.0825,
+      "std": 38.7687791831052,
+      "min": 46.0,
+      "25%": 75.75,
+      "50%": 95.0,
+      "75%": 130.0,
+      "max": 230.0
+    },
+    "Weight_in_lbs": {
+      "count": 406.0,
+      "mean": 2979.4137931034484,
+      "std": 847.0043282393509,
+      "min": 1613.0,
+      "25%": 2226.5,
+      "50%": 2822.5,
+      "75%": 3618.25,
+      "max": 5140.0
+    },
+    "Acceleration": {
+      "count": 406.0,
+      "mean": 15.519704433497537,
+      "std": 2.803358816342546,
+      "min": 8.0,
+      "25%": 13.7,
+      "50%": 15.5,
+      "75%": 17.175,
+      "max": 24.8
+    }
+  },
+  "brand_analysis_train_only": {
+    "normalized_unique_brands_in_train": 29,
+    "train_brands_associated_with_multiple_origins": 0,
+    "each_observed_train_brand_has_one_origin_label": true,
+    "alias_rules": {
+      "chevy/chevroelt": "chevrolet",
+      "maxda": "mazda",
+      "toyouta": "toyota",
+      "vokswagen/vw": "volkswagen",
+      "mercedes": "mercedes-benz"
+    }
+  }
+}
